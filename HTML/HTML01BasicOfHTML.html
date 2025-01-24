@@ -1,0 +1,136 @@
+<!DOCTYPE html> <!-- Declaration of the document type (HTML5) -->
+
+<html lang="en"> <!-- Opening tag for HTML, lang attribute specifies the language -->
+
+<head>
+      <!-- Metadata about the document -->
+      <meta charset="UTF-8"> <!-- Character encoding -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- Compatibility with older versions of Internet Explorer -->
+
+      <title>HTML Basics</title> <!-- Title of the webpage shown in the browser tab -->
+
+      <!-- Internal CSS Styles -->
+      <style>
+            body {
+                  font-family: Arial, sans-serif;
+                  background-color: #f4f4f9;
+                  margin: 0;
+                  padding: 0;
+            }
+
+            header {
+                  background-color: #2C3E50;
+                  color: white;
+                  text-align: center;
+                  padding: 20px;
+            }
+
+            main {
+                  padding: 20px;
+            }
+
+            h1,
+            h2 {
+                  color: #2C3E50;
+            }
+
+            section {
+                  margin-bottom: 20px;
+                  padding: 10px;
+                  background-color: #ffffff;
+                  border-radius: 8px;
+                  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            p {
+                  font-size: 16px;
+                  color: #34495E;
+            }
+
+            code {
+                  background-color: #ecf0f1;
+                  padding: 4px 8px;
+                  border-radius: 4px;
+                  font-family: Consolas, monospace;
+            }
+      </style>
+</head>
+
+<body>
+
+      <header>
+            <h1>Basics of HTML</h1> <!-- Heading of the webpage -->
+      </header>
+
+      <main> <!-- Main content of the webpage -->
+            <section> <!-- Section of the webpage -->
+                  <h2>Introduction to HTML</h2>
+                  <p>HTML (Hypertext Markup Language) is the standard language used to create web pages. It provides the
+                        structure for web content.</p>
+            </section>
+
+            <section>
+                  <h2>Structure of an HTML Document</h2>
+                  <p>An HTML document is made up of various elements. The basic structure includes:</p>
+                  <code>&lt;html&gt; &lt;head&gt; &lt;body&gt;</code>
+            </section>
+
+            <section>
+                  <h2>HTML Tags and Attributes</h2>
+                  <p>HTML tags define elements, and attributes provide additional information about the elements. For
+                        example, the <code>&lt;img&gt;</code> tag has the <code>src</code> attribute to specify the
+                        image source:</p>
+                  <code>&lt;img src="image.jpg" alt="Image"&gt;</code>
+            </section>
+
+            <section>
+                  <h2>Basic Tags</h2>
+                  <p>The basic tags that structure an HTML document include:</p>
+                  <ul>
+                        <li><code>&lt;html&gt;</code>: Defines the HTML document</li>
+                        <li><code>&lt;head&gt;</code>: Contains metadata (like title, character set, etc.)</li>
+                        <li><code>&lt;body&gt;</code>: Contains the visible content of the webpage</li>
+                        <li><code>&lt;title&gt;</code>: Sets the title of the page</li>
+                        <li><code>&lt;meta&gt;</code>: Provides metadata such as character set and viewport settings
+                        </li>
+                  </ul>
+            </section>
+
+            <section>
+                  <h2>HTML Doctype Declaration</h2>
+                  <p>The <code>&lt;!DOCTYPE html&gt;</code> declaration defines the document type and version of HTML.
+                        It should be the first line in any HTML document to specify that the document is HTML5:</p>
+                  <code>&lt;!DOCTYPE html&gt;</code>
+            </section>
+
+            <section>
+                  <h2>HTML Comments</h2>
+                  <p>HTML comments are written within <code>&lt;!-- comment --&gt;</code> tags. These comments are not
+                        displayed on the page, but can help with documentation:</p>
+                  <code>&lt;!-- This is a comment --&gt;</code>
+            </section>
+            <section>
+                  <h2><code>&lt;code&gt; tag:</code></h2>
+                  <p>The <code>&lt;code&gt;</code> tag is used to define a block of code or an inline code fragment on a
+                        webpage. The text inside it is typically rendered in a monospace font, which makes it stand out
+                        from regular text. This is helpful for displaying code snippets in documentation or tutorials.
+                  </p>
+            </section>
+
+            <section>
+                  <h2>&lt; and &gt;:</h2>
+                  <p><code>&lt;</code> and <code>&gt;</code> are HTML character entities that represent the less-than (
+                        <) and greater-than (>) signs, respectively. Since < and> are special characters in HTML (used
+                                    for tags), you need to use these entities to display them as literal characters on
+                                    the page.
+                  </p>
+                  <p>Without these entities, the browser would interpret < and> as the start and end of an HTML tag,
+                              which could break the rendering of the code.</p>
+            </section>
+      </main>
+
+</body>
+
+</html>
