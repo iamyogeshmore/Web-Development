@@ -16,7 +16,7 @@ This README file serves as a roadmap to becoming a MERN (MongoDB, Express.js, Re
 - **HTML Basics**
   - Structure of an HTML document
   - Common tags: `<div>`, `<p>`, `<h1>`, `<img>`, `<a>`, etc.
-  - [HTML Topic Guide Deplyed webpage ](https://app.netlify.com/sites/htmltopicguide/configuration/general)
+  - [HTML Topic Guide deployed webpage ](https://htmltopicguide.netlify.app/)
 - **CSS Basics**
   - Selectors, properties, and values
   - Box model, flexbox, and grid
