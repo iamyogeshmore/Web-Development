@@ -1,4 +1,5 @@
-"# Web-Development" 
+"# Web-Development"
+
 # MERN Stack Developer Roadmap
 
 This README file serves as a roadmap to becoming a MERN (MongoDB, Express.js, React, Node.js) stack developer. Below is a step-by-step guide to study the essential tools, technologies, and topics needed to master the MERN stack from scratch.
@@ -6,13 +7,16 @@ This README file serves as a roadmap to becoming a MERN (MongoDB, Express.js, Re
 ---
 
 ## 1. **Introduction to Web Development**
+
 ### Topics:
+
 - **What is Web Development?**
   - Frontend vs Backend
   - Client-server architecture
 - **HTML Basics**
   - Structure of an HTML document
   - Common tags: `<div>`, `<p>`, `<h1>`, `<img>`, `<a>`, etc.
+  - [HTML Topic Guide Deplyed webpage ](https://app.netlify.com/sites/htmltopicguide/configuration/general)
 - **CSS Basics**
   - Selectors, properties, and values
   - Box model, flexbox, and grid
@@ -23,7 +27,9 @@ This README file serves as a roadmap to becoming a MERN (MongoDB, Express.js, Re
 ---
 
 ## 2. **Command Line Basics**
+
 ### Topics:
+
 - Navigating the file system
   - Commands: `cd`, `ls`, `pwd`, `mkdir`, `rm`, `cp`, `mv`
 - Creating, reading, and editing files
@@ -33,7 +39,9 @@ This README file serves as a roadmap to becoming a MERN (MongoDB, Express.js, Re
 ---
 
 ## 3. **Git and GitHub**
+
 ### Topics:
+
 - **What is Git?**
   - Version control basics
   - Initializing a repository: `git init`
@@ -48,7 +56,9 @@ This README file serves as a roadmap to becoming a MERN (MongoDB, Express.js, Re
 ---
 
 ## 4. **Frontend Development**
+
 ### Topics:
+
 - **Advanced HTML & CSS**
   - Forms and validations
   - Responsive design with media queries
@@ -64,7 +74,9 @@ This README file serves as a roadmap to becoming a MERN (MongoDB, Express.js, Re
 ---
 
 ## 5. **Backend Development**
+
 ### Topics:
+
 - **Node.js Basics**
   - What is Node.js? Why use it?
   - Setting up a Node.js project: `npm init`
@@ -80,7 +92,9 @@ This README file serves as a roadmap to becoming a MERN (MongoDB, Express.js, Re
 ---
 
 ## 6. **Database Management**
+
 ### Topics:
+
 - **MongoDB Basics**
   - What is MongoDB?
   - Setting up a MongoDB server locally or with MongoDB Atlas
@@ -93,7 +107,9 @@ This README file serves as a roadmap to becoming a MERN (MongoDB, Express.js, Re
 ---
 
 ## 7. **Full Stack Development**
+
 ### Topics:
+
 - Connecting Frontend to Backend
   - Making API calls from React
   - State management with Context API or Redux
@@ -108,7 +124,9 @@ This README file serves as a roadmap to becoming a MERN (MongoDB, Express.js, Re
 ---
 
 ## 8. **DevOps Basics**
+
 ### Topics:
+
 - Introduction to CI/CD
   - Setting up GitHub Actions
   - Automating deployments
@@ -118,12 +136,15 @@ This README file serves as a roadmap to becoming a MERN (MongoDB, Express.js, Re
 ---
 
 ## 9. **Project Ideas**
+
 ### Beginner Projects:
+
 1. To-Do List Application
 2. Blog Website
 3. Weather Application using APIs
 
 ### Intermediate Projects:
+
 1. E-commerce website
 2. Social media application
 3. Chat application (using WebSockets)
@@ -131,14 +152,17 @@ This README file serves as a roadmap to becoming a MERN (MongoDB, Express.js, Re
 ---
 
 ## 10. **Additional Resources**
+
 - **Documentation**
   - [MDN Web Docs](https://developer.mozilla.org/)
   - [React Documentation](https://reactjs.org/docs/getting-started.html)
   - [Express.js Documentation](https://expressjs.com/)
   - [MongoDB Documentation](https://www.mongodb.com/docs/)
+
 ---
 
 ## 11. **Next Steps**
+
 - Practice building projects to solidify your skills.
 - Contribute to open-source projects.
 - Continuously learn and stay updated with the latest web development trends.
@@ -146,4 +170,3 @@ This README file serves as a roadmap to becoming a MERN (MongoDB, Express.js, Re
 ---
 
 Happy coding!
-
