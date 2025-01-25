@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Text Formatting and Semantics</title>
+      <style>
+            body {
+                  font-family: Arial, sans-serif;
+                  line-height: 1.6;
+                  margin: 20px;
+                  color: #333;
+                  background-color: #f7f9fc;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                  color: #2c3e50;
+                  margin-bottom: 10px;
+            }
+
+            p {
+                  margin-bottom: 10px;
+            }
+
+            hr {
+                  border: 0;
+                  height: 1px;
+                  background: #ccc;
+                  margin: 20px 0;
+            }
+
+            b,
+            strong {
+                  font-weight: bold;
+                  color: #d35400;
+            }
+
+            i,
+            em {
+                  font-style: italic;
+                  color: #8e44ad;
+            }
+
+            u {
+                  text-decoration: underline;
+                  color: #2980b9;
+            }
+
+            blockquote {
+                  margin: 20px;
+                  padding: 10px;
+                  background: #f9f9f9;
+                  border-left: 5px solid #3498db;
+                  font-style: italic;
+                  color: #34495e;
+            }
+
+            q {
+                  quotes: "\201C" "\201D";
+                  color: #7f8c8d;
+            }
+
+            q:before {
+                  content: open-quote;
+            }
+
+            q:after {
+                  content: close-quote;
+            }
+
+            code {
+                  background: #f4f4f4;
+                  padding: 2px 4px;
+                  font-family: Consolas, monospace;
+                  font-size: 0.95em;
+                  color: #c0392b;
+                  border-radius: 4px;
+            }
+
+            pre {
+                  background: #ecf0f1;
+                  padding: 10px;
+                  overflow: auto;
+                  font-family: Consolas, monospace;
+                  font-size: 0.95em;
+                  border: 1px solid #bdc3c7;
+                  border-radius: 5px;
+                  color: #2c3e50;
+            }
+
+            sub {
+                  font-size: 0.75em;
+                  vertical-align: sub;
+                  color: #16a085;
+            }
+
+            sup {
+                  font-size: 0.75em;
+                  vertical-align: super;
+                  color: #e74c3c;
+            }
+
+            .example-container {
+                  margin: 20px 0;
+                  padding: 15px;
+                  background: #ffffff;
+                  border: 1px solid #ddd;
+                  border-radius: 5px;
+                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .example-container p {
+                  margin: 0 0 10px;
+            }
+      </style>
+</head>
+
+<body>
+      <h1>Headings</h1>
+      <h2>Heading Level 2</h2>
+      <h3>Heading Level 3</h3>
+      <h4>Heading Level 4</h4>
+      <h5>Heading Level 5</h5>
+      <h6>Heading Level 6</h6>
+
+      <p>This is a paragraph. Paragraphs are used to structure text into readable sections.</p>
+
+      <hr>
+
+      <p>
+            This text contains <b>bold</b>, <i>italic</i>, and <u>underlined</u> elements for emphasis.
+      </p>
+
+      <p>
+            This text uses <strong>strong</strong> for importance and <em>emphasis</em> for stress.
+      </p>
+
+      <div class="example-container">
+            <p>
+                  H<sub>2</sub>O is the chemical formula for water, and E = mc<sup>2</sup> is Einstein's mass-energy
+                  equivalence formula.
+            </p>
+      </div>
+
+      <blockquote>
+            This is a blockquote, typically used for longer quotes or excerpts.
+      </blockquote>
+
+      <p>
+            This is an inline quote: <q>The quick brown fox jumps over the lazy dog.</q>
+      </p>
+
+      <pre>
+        This is preformatted text.
+        It preserves whitespace and line breaks.
+    </pre>
+
+      <p>
+            Inline code example: <code>console.log('Hello, World!');</code>
+      </p>
+</body>
+
+</html>
