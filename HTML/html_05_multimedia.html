@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Multimedia in HTML - Goku</title>
+      <style>
+            body {
+                  font-family: Arial, sans-serif;
+                  margin: 0;
+                  padding: 0;
+                  background-color: #f4f4f9;
+                  color: #333;
+                  line-height: 1.6;
+            }
+
+            header {
+                  background: #007acc;
+                  color: #fff;
+                  padding: 20px;
+                  text-align: center;
+            }
+
+            section {
+                  padding: 20px;
+                  margin: 10px auto;
+                  max-width: 800px;
+                  background: #fff;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                  border-radius: 10px;
+            }
+
+            h2 {
+                  color: #007acc;
+                  border-bottom: 2px solid #007acc;
+                  padding-bottom: 5px;
+                  margin-bottom: 15px;
+            }
+
+            img {
+                  max-width: 100%;
+                  height: auto;
+                  border: 2px solid #007acc;
+                  border-radius: 10px;
+            }
+
+            audio,
+            video {
+                  display: block;
+                  margin: 10px 0;
+                  max-width: 100%;
+            }
+
+            .svg-container,
+            .canvas-container {
+                  margin: 20px 0;
+                  text-align: center;
+            }
+
+            iframe {
+                  width: 100%;
+                  height: 315px;
+                  border: none;
+                  border-radius: 10px;
+            }
+      </style>
+</head>
+
+<body>
+      <header>
+            <h1>Multimedia in HTML</h1>
+      </header>
+
+      <section>
+            <h2>I Frame</h2>
+            <iframe width="100%" height="150" src="https://www.youtube.com/embed/7svhUsjZbbY" title="Goku Theme Audio"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+            </iframe>
+      </section>
+
+      <section>
+            <h2>Audio</h2>
+            <audio controls>
+                  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+            </audio>
+      </section>
+
+      <section>
+            <h2>Images</h2>
+            <img src="./Assets/Goku.png" alt="Goku - Dragon Ball">
+      </section>
+
+      <section>
+            <h2>Images</h2>
+            <img src="./Assets/Goku2.png" alt="Goku - Dragon Ball">
+      </section>
+
+      <section>
+            <h2>Video</h2>
+            <video controls>
+                  <source src="https://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+                  Your browser does not support the video element.
+            </video>
+      </section>
+
+      <section>
+            <h2>Embedding Videos</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nw61sS2IJiM?si=D84AIjqp61Uc_gB-"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+
+      <section>
+            <h2>Scalable Vector Graphics (SVG)</h2>
+            <div class="svg-container">
+                  <object type="image/svg+xml" data="./Assets/Goku2.svg" width="200" height="200">
+                        Your browser does not support SVGs.
+                  </object>
+            </div>
+      </section>
+
+</body>
+
+</html>
