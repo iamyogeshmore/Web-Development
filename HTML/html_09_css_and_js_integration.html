@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>HTML, CSS, and JavaScript Integration</title>
+
+      <!-- External Stylesheet -->
+      <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+      <h1>HTML, CSS, and JavaScript Integration</h1>
+
+      <!-- HTML Entities Example -->
+      <h2>HTML Entities Example</h2>
+
+      <!-- Iframe Example -->
+      <h2>Embedding an External Website with an Iframe</h2>
+      <div class="video-container">
+            <iframe src="https://www.example.com" width="600" height="400"></iframe>
+      </div>
+
+      <!-- Responsive Design with Meta Viewport -->
+      <h2>Responsive Design</h2>
+      <p>Resize the window to see the responsiveness in action.</p>
+
+      <!-- Custom Data Attributes Example -->
+      <h2>Custom Data Attributes</h2>
+      <div class="custom-data" data-user-id="12345" data-role="admin">
+            User Profile (Data Attribute Example)
+      </div>
+
+      <!-- Progressive Enhancement Example -->
+      <h2>Progressive Enhancement</h2>
+      <p id="progressive-message">Basic message: JavaScript is disabled</p>
+
+      <!-- Fallback Content (for <video>, <audio>, <canvas>) -->
+      <h2>Fallback Content Example</h2>
+      <div class="video-container">
+            <video controls width="600">
+                  <source src="movie.mp4" type="video/mp4">
+                  <p class="fallback-message">Your browser does not support the video tag. Here is a <a
+                              href="movie.mp4">download link</a>.</p>
+            </video>
+      </div>
+
+      <!-- Internal Stylesheet Example -->
+      <h2>Internal CSS Example</h2>
+      <p>This text is styled with the internal CSS from the <code>&lt;style&gt;</code> tag in the
+            <code>&lt;head&gt;</code> section.</p>
+
+      <!-- External CSS Example -->
+      <h2>External CSS Example</h2>
+      <p>This is styled with an external CSS file that is linked using the <code>&lt;link&gt;</code> tag.</p>
+
+      <!-- Inline Styles Example -->
+      <h2>Inline Styles Example</h2>
+      <p style="color: blue; font-size: 20px;">This paragraph has inline styling applied directly within the HTML
+            element.</p>
+
+      <!-- Embedding JavaScript Example -->
+      <h2>Embedding JavaScript Example</h2>
+      <p>Click the button below to trigger JavaScript functionality:</p>
+      <button onclick="changeText()">Click Me</button>
+      <p id="change-text">This text will change when you click the button.</p>
+
+      <!-- External JavaScript -->
+      <script src="scripts.js"></script>
+
+</body>
+
+</html>
