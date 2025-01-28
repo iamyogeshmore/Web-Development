@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="HTML Forms and APIs demo">
+      <meta name="keywords" content="HTML, Forms, APIs, Geolocation, Drag and Drop, Canvas, Audio">
+      <meta name="robots" content="index, follow">
+      <meta property="og:title" content="HTML Forms and APIs Demo">
+      <meta property="og:description"
+            content="Learn about advanced HTML forms and various HTML5 APIs like Geolocation, Drag and Drop, and Web Storage.">
+      <title>HTML Forms and APIs</title>
+      <style>
+            body {
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                  background-color: #f4f7f6;
+                  color: #333;
+                  margin: 0;
+                  padding: 0;
+                  line-height: 1.6;
+            }
+
+            h1.heading {
+                  color: #007BFF;
+                  font-size: 1.8rem;
+                  font-weight: 700;
+                  margin-bottom: 20px;
+                  text-align: center;
+                  border-bottom: 3px solid #007BFF;
+                  padding-bottom: 10px;
+            }
+
+            .heading1 {
+                  color: #263e77;
+            }
+
+            h1,
+            h2,
+            h3 {
+                  color: #3e4a59;
+                  font-weight: 600;
+            }
+
+            .container {
+                  max-width: 900px;
+                  margin: 20px auto;
+                  padding: 20px;
+            }
+
+            form {
+                  background-color: #ffffff;
+                  padding: 25px;
+                  border-radius: 10px;
+                  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+                  margin-bottom: 30px;
+            }
+
+            label {
+                  font-size: 1rem;
+                  margin-bottom: 5px;
+                  display: block;
+                  color: #3e4a59;
+            }
+
+            input,
+            select,
+            textarea {
+                  width: 100%;
+                  padding: 12px;
+                  margin-bottom: 15px;
+                  border-radius: 8px;
+                  border: 1px solid #ddd;
+                  box-sizing: border-box;
+                  font-size: 1rem;
+                  background-color: #f9f9f9;
+            }
+
+            input[type="color"] {
+                  padding: 0;
+                  border: none;
+            }
+
+            input[type="file"] {
+                  padding: 5px 10px;
+                  border-radius: 8px;
+            }
+
+            button {
+                  padding: 12px 20px;
+                  margin-bottom: 20px;
+                  background-color: #007BFF;
+                  color: #fff;
+                  border: none;
+                  border-radius: 8px;
+                  font-size: 1.1rem;
+                  cursor: pointer;
+                  transition: background-color 0.3s ease;
+                  width: 100%;
+            }
+
+            button:hover {
+                  background-color: #0056b3;
+            }
+
+            .drag-area {
+                  padding: 20px;
+                  border: 2px dashed #007BFF;
+                  background-color: #f1faff;
+                  text-align: center;
+                  margin-bottom: 20px;
+                  border-radius: 8px;
+                  cursor: pointer;
+            }
+
+            .drag-area:hover {
+                  background-color: #e1f0ff;
+            }
+
+            .apis-section,
+            .media-section {
+                  background-color: #fff;
+                  padding: 20px;
+                  border-radius: 10px;
+                  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+                  margin-bottom: 20px;
+            }
+
+            canvas {
+                  width: 100%;
+                  height: 400px;
+                  border-radius: 8px;
+                  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            audio,
+            video {
+                  max-width: 100%;
+                  border-radius: 8px;
+                  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            #geoLocation,
+            #output,
+            #localStorageOutput {
+                  font-size: 1rem;
+                  margin-top: 10px;
+                  color: #555;
+            }
+
+            #geoLocation {
+                  font-weight: 600;
+            }
+
+            input[type="date"],
+            input[type="email"],
+            input[type="password"],
+            input[type="text"],
+            textarea,
+            select {
+                  background-color: #f8f9fa;
+            }
+
+            input:focus,
+            select:focus,
+            textarea:focus {
+                  outline: none;
+                  border-color: #007BFF;
+                  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+            }
+      </style>
+</head>
+
+<body>
+      <h1 class="heading">HTML Forms and APIs Demo</h1>
+
+      <!-- HTML Form Example -->
+      <div class="container">
+            <h2 class="heading1">Advanced HTML Form</h2>
+            <form action="#" method="post">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus
+                        autocomplete="name">
+
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" name="password" placeholder="Enter a strong password" required
+                        pattern=".{6,}" title="Password must be at least 6 characters">
+
+                  <label for="color">Favorite Color:</label>
+                  <input type="color" id="color" name="color" value="#ff0000">
+
+                  <label for="birthdate">Birthdate:</label>
+                  <input type="date" id="birthdate" name="birthdate" required>
+
+                  <label for="gender">Gender:</label>
+                  <select id="gender" name="gender" required>
+                        <option value="">Please select your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                  </select>
+
+                  <label for="bio">Biography:</label>
+                  <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself"></textarea>
+
+                  <label for="fileUpload">Upload File:</label>
+                  <input type="file" id="fileUpload" name="fileUpload">
+
+                  <!-- Hidden field -->
+                  <input type="hidden" id="userId" name="userId" value="12345">
+
+                  <label for="preferences">Preferences:</label>
+                  <datalist id="preferences">
+                        <option value="Newsletter">
+                        <option value="Special Offers">
+                        <option value="Product Updates">
+                  </datalist>
+                  <input type="text" id="preferencesInput" name="preferences" list="preferences"
+                        placeholder="Select your preferences">
+
+                  <button type="submit">Submit</button>
+            </form>
+      </div>
+
+      <!-- HTML5 APIs Section -->
+      <div class="container">
+            <div class="apis-section">
+                  <h2>Geolocation API</h2>
+                  <button onclick="getLocation()">Get My Location</button>
+                  <p id="geoLocation"></p>
+            </div>
+
+            <div class="apis-section">
+                  <h2>Drag and Drop API</h2>
+                  <div id="drag-area" class="drag-area" draggable="true" ondragstart="drag(event)">
+                        Drag me to the drop area!
+                  </div>
+                  <div id="drop-area" class="drag-area" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        Drop here
+                  </div>
+                  <div id="output"></div>
+            </div>
+
+            <div class="apis-section">
+                  <h2>Web Storage API</h2>
+                  <button onclick="storeData()">Store Data in LocalStorage</button>
+                  <button onclick="retrieveData()">Retrieve Data from LocalStorage</button>
+                  <p id="localStorageOutput"></p>
+            </div>
+
+
+      </div>
+
+      <script>
+            // Geolocation API
+            function getLocation() {
+                  if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(function (position) {
+                              document.getElementById("geoLocation").innerHTML =
+                                    "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+                        });
+                  } else {
+                        alert("Geolocation is not supported by this browser.");
+                  }
+            }
+
+            // Drag and Drop API
+            function allowDrop(ev) {
+                  ev.preventDefault();
+            }
+
+            function drag(ev) {
+                  ev.dataTransfer.setData("text", ev.target.id);
+            }
+
+            function drop(ev) {
+                  ev.preventDefault();
+                  var data = ev.dataTransfer.getData("text");
+                  ev.target.appendChild(document.getElementById(data));
+                  document.getElementById("output").innerHTML = "Item Dropped!";
+            }
+
+            // Web Storage API (localStorage)
+            function storeData() {
+                  localStorage.setItem("username", "Yogesh More");
+                  alert("Data Stored in LocalStorage");
+            }
+
+            function retrieveData() {
+                  var username = localStorage.getItem("username");
+                  document.getElementById("localStorageOutput").innerHTML = "Stored Username: " + username;
+            }
+
+            // Canvas API
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(20, 20, 150, 100);
+      </script>
+</body>
