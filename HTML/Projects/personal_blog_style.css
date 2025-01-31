@@ -1,0 +1,798 @@
+/* Link the Playfair Display font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+body {
+      font-family: 'Poppins', sans-serif;
+}
+
+span.text-primary {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      color: #333131;
+      letter-spacing: 0.4rem;
+      font-size: 0.8rem;
+}
+
+p.text-secondary {
+      display: flex;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      color: #555;
+}
+
+p.text-secondary a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 4.5rem;
+}
+
+
+nav {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+}
+
+.navbar nav ul {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+}
+
+.navbar nav ul li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 15px;
+      position: relative;
+      padding: 0 25px;
+}
+
+.navbar nav ul li::before,
+.navbar nav ul li::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 0.5px;
+      background-color: #000;
+}
+
+.navbar nav ul li::before {
+      left: -15px;
+}
+
+.navbar nav ul li::after {
+      right: -15px;
+}
+
+.navbar nav ul li:hover {
+      border-color: #7459eb;
+}
+
+.navbar nav ul li a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-size: 0.7rem;
+      transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+      color: #7459eb;
+}
+
+.search-box {
+      font-size: 0.5rem;
+}
+
+.search-box input[type="text"] {
+      border: none;
+      padding: 8px;
+      outline: none;
+      font-size: 0.8rem;
+}
+
+.social-media {
+      font-size: 0.5rem;
+      display: flex;
+      gap: 15px;
+}
+
+.social-media a {
+      color: #000;
+      text-decoration: none;
+      transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+      color: #7459eb;
+}
+
+.gallery-item-content {
+            display: flex;
+   
+      margin-top: 4rem;
+      width: 40%;
+      margin-left: 30%;
+}
+
+.image-box {
+      position: relative;
+      border: 1px solid #000000;
+}
+
+.image-box img {
+      display: block;
+      width: 100%;
+      height: auto;
+}
+
+.overlay-text {
+      position: absolute;
+      top: 2%;
+      left: -0.1%;
+      transform: translateY(-50%);
+      padding: 10px;
+      background-color: rgb(255, 255, 255);
+      text-align: center;
+      letter-spacing: 0.4rem;
+      width: 35%;
+      border: 0.5px solid rgb(0, 0, 0);
+      color: #3d3c3c;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.image-text {
+      color: #000000;
+      padding: auto;
+      margin: auto;
+      padding: 0 20px;
+      margin-bottom: 1rem;
+}
+
+.image-text h2 {
+      font-family: "Poppins", serif;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #000000;
+}
+
+.image-text p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 400;
+      color: #505050;
+      margin-bottom: 40px;
+}
+
+.image-text:hover h2,
+.image-text:hover p {
+      color: #7459eb;
+}
+
+p.meta {
+      margin-top: 10px;
+      padding: 0 20px;
+      font-size: 0.8rem;
+      color: #000000;
+      font-family: "Poppins", serif;
+}
+
+.subscribe-section {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 5rem;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      padding: 40px;
+}
+
+.subscribe-text {
+      font-size: 2rem;
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      line-height: 1.4em;
+      color: #000000;
+}
+
+.subscribe-checkbox {
+      font-size: 0.8rem;
+}
+
+.subscribe-checkbox input[type="email"] {
+      border: none;
+      border-bottom: 2px solid #333;
+      padding: 8px;
+      width: 200px;
+      outline: none;
+      font-size: 0.8rem;
+}
+
+
+.subscribe-btn {
+      background: #8e30f3;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      transition: all 0.3s ease;
+      margin-left: 20px;
+}
+
+.subscribe-btn:hover {
+      background: #000000;
+}
+
+.subscribe-text-checkbox {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+}
+
+.container {
+      display: flex;
+      max-width: 1200px;
+      margin: auto;
+      gap: 40px;
+      text-align: center;
+
+}
+
+.blog-section {
+      flex: 2;
+      margin-top: 5rem;
+}
+
+.section-title {
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+}
+
+.blog-post {
+      display: flex;
+      width: 70%;
+      align-items: center;
+      margin-left: 10%;
+      border: 1px solid #000000;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+
+
+}
+
+.blog-post img {
+      width: 150px;
+      height: auto;
+      margin-right: 15px;
+}
+
+.post-content {
+      flex: 1;
+}
+
+.post-date {
+      font-size: 12px;
+      color: #777;
+}
+
+.post-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 5px 0;
+}
+
+.post-description {
+      font-size: 14px;
+      color: #555;
+}
+
+.post-title,
+.post-description {
+      transition: color 0.3s ease;
+}
+
+
+.post-content:hover .post-title,
+.post-content:hover .post-description {
+      color: #7459eb;
+}
+
+.post-footer {
+      font-size: 12px;
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.like {
+      color: red;
+      font-weight: bold;
+}
+
+/* Sidebar */
+.sidebar {
+      flex: 1;
+      border-left: 1px solid #ddd;
+      padding-left: 20px;
+      margin-top: 5rem;
+
+}
+
+.about-me {
+      text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 0.8rem;
+      color: #555;
+}
+
+.about-me img {
+      width: 100px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+}
+
+
+.read-more {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 12px;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+}
+
+hr {
+      margin: 20px 0;
+      border: none;
+      border-top: 1px solid #ddd;
+}
+
+.follow-me {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+}
+
+.follow-me img {
+
+
+      width: 80px;
+      height: 80px;
+      border-radius: 5px;
+}
+
+.sidebar {
+      flex: 1;
+      border-left: 1px solid #ddd;
+      padding-left: 20px;
+}
+
+
+
+.about-me img {
+      width: 100px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+}
+
+
+.read-more {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 12px;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+}
+
+hr {
+      margin: 20px 0;
+      border: none;
+      border-top: 1px solid #ddd;
+}
+
+.follow-me {
+      text-align: center;
+}
+
+.social-images {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+}
+
+.image-container {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      border-radius: 8px;
+}
+
+.image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: filter 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+      filter: blur(4px);
+}
+
+.image-overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      color: white;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 8px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .image-overlay-text {
+      opacity: 1;
+}
+
+.social-icons {
+      display: flex;
+      justify-content: center;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      margin-top: 10px;
+}
+
+.social-icons a {
+      display: inline-block;
+      width: 30px;
+      padding: 10px;
+}
+
+.social-icons img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+}
+
+.subscribe-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 15px;
+}
+
+.subscribe-form input[type="email"] {
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 80%;
+      max-width: 300px;
+      font-size: 14px;
+}
+
+.subscribe-checkbox-2 {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+}
+
+.subscribe-checkbox-2 input {
+      margin-right: 5px;
+}
+
+.subscribe-form button {
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+      background-color: #45a049;
+}
+
+.contact-form-container {
+      margin-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.contact-form-heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 15px;
+      font-size: 1.5rem;
+      color: #333;
+      font-weight: bold;
+
+}
+
+.contact-form {
+      width: 50%;
+      margin: auto;
+      text-align: left;
+      background-color: #f9f9f9;
+      padding: 2rem;
+
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.name-fields {
+      display: flex;
+      justify-content: space-between;
+      gap: 2%;
+
+}
+
+.name-fields div {
+      width: 48%;
+
+}
+
+
+
+
+.form-label {
+      display: block;
+      margin-top: 10px;
+      color: #000000;
+      font-size: 0.8rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-input,
+.form-textarea {
+      border: none;
+      outline: none;
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      font-size: 1rem;
+      border-bottom: 1px solid #000000;
+
+}
+
+.form-input:focus,
+.form-textarea:focus {
+      border-color: #007BFF;
+}
+
+
+
+.form-textarea {
+      min-height: 150px;
+      resize: vertical;
+}
+
+.form-submit-button {
+      display: block;
+      width: 200px;
+      margin: 20px auto 0;
+      padding: 12px 24px;
+      background-color: #004cff;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+}
+
+.form-submit-button:hover {
+      background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+      background-color: #5b5b5b75;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #000000;
+      margin-top: 20px;
+      padding: 3px;
+      font-size: 0.7rem;
+      text-align: center;
+}
+
+/* @media screen and (max-width: 1200px) {
+      .container {
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .gallery-item-content {
+          width: 80%;
+          margin-left: 0;
+      }
+  
+      .subscribe-section {
+          flex-direction: column;
+          align-items: center;
+          padding: 20px;
+      }
+  
+      .blog-post {
+          width: 90%;
+          margin-left: 0;
+          margin-bottom: 15px;
+      }
+  
+      .navbar nav ul {
+          flex-direction: column;
+      }
+  
+      .navbar nav ul li {
+          margin: 10px 0;
+      }
+  
+      .sidebar {
+          flex: none;
+          width: 100%;
+          padding-left: 0;
+      }
+  
+      .about-me img {
+          width: 80px;
+          margin-bottom: 5px;
+      }
+  
+      .about-me p {
+          font-size: 12px;
+      }
+  
+      .social-media {
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .social-media a {
+          font-size: 1rem;
+          margin-bottom: 10px;
+      }
+  
+      .social-icons {
+          flex-direction: column;
+      }
+  
+      .social-icons a {
+          margin: 5px 0;
+      }
+  }
+  
+  @media screen and (max-width: 768px) {
+      .navbar nav ul li a {
+          font-size: 1rem;
+      }
+  
+      .image-text h2 {
+          font-size: 1.2rem;
+      }
+  
+      .image-text p {
+          font-size: 0.9rem;
+      }
+  
+      .subscribe-text {
+          font-size: 1.5rem;
+      }
+  
+      .blog-post img {
+          width: 100px;
+          margin-right: 10px;
+      }
+  
+      .contact-form {
+          width: 90%;
+      }
+  
+      .name-fields {
+          flex-direction: column;
+      }
+  
+      .name-fields div {
+          width: 100%;
+          margin-bottom: 10px;
+      }
+  
+      .form-label {
+          font-size: 0.7rem;
+      }
+  
+      .form-input,
+      .form-textarea {
+          font-size: 0.9rem;
+      }
+  
+      .form-input:focus,
+      .form-textarea:focus {
+          border-color: #007BFF;
+      }
+  }
+  
+  @media screen and (max-width: 480px) {
+      .navbar nav ul li a {
+          font-size: 0.9rem;
+      }
+  
+      .text-primary {
+          font-size: 0.6rem;
+      }
+  
+      .image-text h2 {
+          font-size: 1rem;
+      }
+  
+      .image-text p {
+          font-size: 0.8rem;
+      }
+  
+      .subscribe-text {
+          font-size: 1.2rem;
+      }
+  
+      .social-media a {
+          font-size: 1.2rem;
+      }
+  
+      .subscribe-form input[type="email"] {
+          font-size: 12px;
+      }
+  
+      .subscribe-btn {
+          font-size: 0.7rem;
+      }
+  
+      .container {
+          gap: 20px;
+      }
+  
+      .blog-post {
+          flex-direction: column;
+          width: 100%;
+      }
+  
+      .image-box {
+          width: 100%;
+      }
+  
+      .post-title,
+      .post-description {
+          font-size: 1rem;
+      }
+  
+      .contact-form-heading {
+          font-size: 1.2rem;
+      }
+  
+      .contact-form {
+          width: 100%;
+          padding: 1rem;
+      }
+  
+      .social-icons a {
+          width: 25px;
+          height: 25px;
+      }
+  }
+   */
